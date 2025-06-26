@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog - Modern Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2>Modern Store</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="catalog.html" class="nav-link active">Catalog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Our Catalog</h1>
+                <p>Explore our collection of premium products</p>
+            </div>
+        </section>
+
+        <section class="catalog-content">
+            <div class="container">
+                <div class="filter-bar">
+                    <select class="filter-select">
+                        <option value="all">All Categories</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="fashion">Fashion</option>
+                        <option value="home">Home & Garden</option>
+                    </select>
+                    <select class="sort-select">
+                        <option value="name">Sort by Name</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                    </select>
+                </div>
+
+                <div class="products-grid">
+                    <div class="product-card">
+                        <img src="/placeholder.svg?height=250&width=300" alt="Premium Headphones">
+                        <div class="product-info">
+                            <h3>Premium Headphones</h3>
+                            <p class="product-price">$199.99</p>
+                            <p class="product-description">High-quality wireless headphones with noise cancellation</p>
+                            <a href="product-details.html?id=1" class="product-link">View Details</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="/placeholder.svg?height=250&width=300" alt="Smart Watch">
+                        <div class="product-info">
+                            <h3>Smart Watch</h3>
+                            <p class="product-price">$299.99</p>
+                            <p class="product-description">Advanced fitness tracking and smart notifications</p>
+                            <a href="product-details.html?id=2" class="product-link">View Details</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="/placeholder.svg?height=250&width=300" alt="Designer Jacket">
+                        <div class="product-info">
+                            <h3>Designer Jacket</h3>
+                            <p class="product-price">$149.99</p>
+                            <p class="product-description">Stylish and comfortable jacket for all seasons</p>
+                            <a href="product-details.html?id=3" class="product-link">View Details</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="/placeholder.svg?height=250&width=300" alt="Coffee Maker">
+                        <div class="product-info">
+                            <h3>Premium Coffee Maker</h3>
+                            <p class="product-price">$89.99</p>
+                            <p class="product-description">Brew the perfect cup every time</p>
+                            <a href="product-details.html?id=4" class="product-link">View Details</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="/placeholder.svg?height=250&width=300" alt="Laptop Stand">
+                        <div class="product-info">
+                            <h3>Ergonomic Laptop Stand</h3>
+                            <p class="product-price">$59.99</p>
+                            <p class="product-description">Improve your workspace ergonomics</p>
+                            <a href="product-details.html?id=5" class="product-link">View Details</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="/placeholder.svg?height=250&width=300" alt="Plant Pot">
+                        <div class="product-info">
+                            <h3>Ceramic Plant Pot</h3>
+                            <p class="product-price">$24.99</p>
+                            <p class="product-description">Beautiful handcrafted ceramic pot</p>
+                            <a href="product-details.html?id=6" class="product-link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Modern Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

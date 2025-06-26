@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Modern Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2>Modern Store</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="catalog.html" class="nav-link">Catalog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="breadcrumb">
+            <div class="container">
+                <a href="index.html">Home</a> > 
+                <a href="catalog.html">Catalog</a> > 
+                <span>Premium Headphones</span>
+            </div>
+        </section>
+
+        <section class="product-details">
+            <div class="container">
+                <div class="product-detail-grid">
+                    <div class="product-images">
+                        <div class="main-image">
+                            <img src="/placeholder.svg?height=400&width=400" alt="Premium Headphones" id="mainImage">
+                        </div>
+                        <div class="thumbnail-images">
+                            <img src="/placeholder.svg?height=100&width=100" alt="Headphones view 1" class="thumbnail active" onclick="changeImage(this)">
+                            <img src="/placeholder.svg?height=100&width=100" alt="Headphones view 2" class="thumbnail" onclick="changeImage(this)">
+                            <img src="/placeholder.svg?height=100&width=100" alt="Headphones view 3" class="thumbnail" onclick="changeImage(this)">
+                        </div>
+                    </div>
+
+                    <div class="product-info-detail">
+                        <h1>Premium Headphones</h1>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-text">(4.8/5 - 124 reviews)</span>
+                        </div>
+                        <p class="price">$199.99</p>
+                        
+                        <div class="product-description">
+                            <h3>Description</h3>
+                            <p>Experience superior sound quality with our premium wireless headphones. Featuring advanced noise cancellation technology, comfortable over-ear design, and up to 30 hours of battery life.</p>
+                        </div>
+
+                        <div class="product-features">
+                            <h3>Features</h3>
+                            <ul>
+                                <li>Active Noise Cancellation</li>
+                                <li>30-hour battery life</li>
+                                <li>Bluetooth 5.0 connectivity</li>
+                                <li>Premium leather ear cushions</li>
+                                <li>Quick charge: 15 min = 3 hours playback</li>
+                            </ul>
+                        </div>
+
+                        <div class="product-options">
+                            <div class="option-group">
+                                <label>Color:</label>
+                                <select>
+                                    <option>Black</option>
+                                    <option>White</option>
+                                    <option>Silver</option>
+                                </select>
+                            </div>
+                            
+                            <div class="option-group">
+                                <label>Quantity:</label>
+                                <input type="number" value="1" min="1" max="10">
+                            </div>
+                        </div>
+
+                        <div class="product-actions">
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                            <button class="buy-now-btn">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-tabs">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" onclick="showTab('specifications')">Specifications</button>
+                        <button class="tab-btn" onclick="showTab('reviews')">Reviews</button>
+                        <button class="tab-btn" onclick="showTab('shipping')">Shipping</button>
+                    </div>
+
+                    <div class="tab-content">
+                        <div id="specifications" class="tab-pane active">
+                            <h3>Technical Specifications</h3>
+                            <table class="specs-table">
+                                <tr><td>Driver Size</td><td>40mm</td></tr>
+                                <tr><td>Frequency Response</td><td>20Hz - 20kHz</td></tr>
+                                <tr><td>Impedance</td><td>32 Ohm</td></tr>
+                                <tr><td>Weight</td><td>250g</td></tr>
+                                <tr><td>Connectivity</td><td>Bluetooth 5.0, 3.5mm jack</td></tr>
+                                <tr><td>Battery Life</td><td>30 hours (ANC on), 40 hours (ANC off)</td></tr>
+                            </table>
+                        </div>
+
+                        <div id="reviews" class="tab-pane">
+                            <h3>Customer Reviews</h3>
+                            <div class="review">
+                                <div class="review-header">
+                                    <span class="reviewer-name">John D.</span>
+                                    <span class="review-rating">★★★★★</span>
+                                </div>
+                                <p>Excellent sound quality and comfort. The noise cancellation works perfectly!</p>
+                            </div>
+                            <div class="review">
+                                <div class="review-header">
+                                    <span class="reviewer-name">Sarah M.</span>
+                                    <span class="review-rating">★★★★☆</span>
+                                </div>
+                                <p>Great headphones, but the price is a bit high. Overall satisfied with the purchase.</p>
+                            </div>
+                        </div>
+
+                        <div id="shipping" class="tab-pane">
+                            <h3>Shipping Information</h3>
+                            <p><strong>Free shipping</strong> on orders over $100</p>
+                            <p><strong>Standard delivery:</strong> 3-5 business days</p>
+                            <p><strong>Express delivery:</strong> 1-2 business days (+$15)</p>
+                            <p><strong>Return policy:</strong> 30-day money-back guarantee</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Modern Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
